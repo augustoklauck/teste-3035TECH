@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto 3035TECH</title>
+</head>
+<body>
+    <div id="classes"><div id="tags"></div> </div>
+    <header>
+        <div id="logo_box" ><img id="logo" src="logo.png"></div>
+        <div id="logo_box2"><img id="logo2" src="logo_2.png"></div>
+        <div id="tendências"><p id="tendências_text">TENDÊNCIAS ↓</p></div>
+        <form id="form">
+            <input type="text" placeholder="Pesquisa" id="pesquisa" class="pesquisa
+            ">
+            <button class="button">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </header>
+
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+    </div>
+    <main id="painel">
+        <div class="pagination">
+            <div class="page" id="prev">Previous Page</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Next Page</div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
